@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "Please cite the accompanying research article and this software when reusing the numerical evidence."
+type: software
+title: "Domain Shift Reshapes Accuracy–Efficiency Trade-offs in Progressive Visual Place Recognition: Reproducibility Materials"
+authors:
+  - family-names: "Abdul Hafez"
+    given-names: "A. H."
+    affiliation: "Department of Computer Science, College of Computer Sciences and Information Technology, King Faisal University, Saudi Arabia"
+  - family-names: "Alqaraleh"
+    given-names: "Saed"
+    orcid: "https://orcid.org/0000-0002-7146-3905"
+    affiliation: "Department of Data Science and Artificial Intelligence, College of Information Technology, Mutah University, Jordan"
+repository-code: "https://github.com/saed-alqaraleh/gpv-domain-shift"
+license: MIT
+abstract: >-
+  This research-software archive provides frozen development and external evaluation
+  evidence, integrity checks, analysis scripts and CPU-only numerical replay for
+  PlaceGate (identifier GPV) and six comparator policies. It preserves the
+  prespecified NO_GO external verdict, 2,499 paired evaluation queries,
+  17,493 measured policy-service observations and the 100,000-draw paired
+  cluster-bootstrap protocol. The original image-processing pipeline and
+  third-party benchmark images are not redistributed.
+keywords:
+  - visual-place-recognition
+  - progressive-verification
+  - domain-shift
+  - accuracy-efficiency
+  - reproducibility

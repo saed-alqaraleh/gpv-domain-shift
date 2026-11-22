@@ -1,0 +1,28 @@
+{
+  "GPV_EXTERNAL_STATUS": "NO_GO",
+  "gates": {
+    "NI_strict_LCB_gt_minus0_5_pp": false,
+    "breadth_two_of_three_ge_5pct_depth": false,
+    "depth_saving_ge_10pct": false,
+    "no_dataset_delta_lt_minus2_pp": true,
+    "premature_cost_increase_le_plus0_25pp_vs_inlier": true,
+    "premature_recall_cost_le_full_PEAV": false,
+    "runtime_saving_ge_10pct": false
+  },
+  "n_selected_queries": 2499,
+  "point_estimates": {
+    "breadth_dataset_count": 1,
+    "cost_FullPEAV_pp": 0.4337341349365398,
+    "cost_GPV_pp": 0.5673346693386773,
+    "cost_Inlier_pp": 0.7001336005344022,
+    "equal_dataset_delta_recall_lcb95_pp": -0.5088417325936537,
+    "equal_dataset_depth_saving_pct": -30.461337104314918,
+    "equal_dataset_local_runtime_saving_pct": -27.004341269756896
+  },
+  "primary_datasets": [
+    "Freiburg_Across_Seasons",
+    "Daejeon520",
+    "Alderley_Day_Night"
+  ],
+  "source_hash": "348c302e30e959264a36063a7cad021fb7e71428231da2422776b5256c77b175"
+}

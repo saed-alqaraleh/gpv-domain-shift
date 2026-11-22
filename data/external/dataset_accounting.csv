@@ -1,0 +1,4 @@
+available_query_images,by_traversal,dataset,gallery_images,native_positive_eligible_queries,no_native_gallery_positive,selected_positive_eligible
+12307,"{'summer2012': {'available': 6915, 'no_native_gallery_positive': 3259, 'positive_eligible': 3656, 'selected_positive_eligible': 500}, 'summer2015': {'available': 5392, 'no_native_gallery_positive': 915, 'positive_eligible': 4477, 'selected_positive_eligible': 500}}",Freiburg_Across_Seasons,30790,8133,4174,1000
+500,"{'query': {'available': 500, 'no_native_gallery_positive': 1, 'positive_eligible': 499, 'selected_positive_eligible': 499}}",Daejeon520,32377,499,1,499
+16960,"{'night': {'available': 16960, 'no_native_gallery_positive': 4368, 'positive_eligible': 12592, 'selected_positive_eligible': 1000}}",Alderley_Day_Night,14607,12592,4368,1000

@@ -1,0 +1,32 @@
+name: Verify frozen numerical evidence
+permissions:
+  contents: read
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+jobs:
+  cpu-replay:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.13'
+      - name: Install CPU and plot dependencies
+        run: python -m pip install -r requirements-figures.txt
+      - name: Check repository files and Git history for private email exposure
+        run: python scripts/audit_privacy.py
+      - name: Verify release integrity, development decisions and primary inference
+        run: python scripts/verify_release.py
+      - name: Run regression checks
+        run: python -m unittest discover -s tests -v
+      - name: Reproduce numerical tables and plots
+        run: |
+          python scripts/reproduce_results.py --out outputs/tables
+          python scripts/reproduce_figures.py --out outputs/figures
+      - name: Regenerate prespecified 100,000-draw paired cluster bootstrap
+        run: python scripts/reproduce_bootstrap.py --draws 100000 --out outputs/bootstrap/recomputed.csv.gz

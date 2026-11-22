@@ -1,0 +1,292 @@
+{
+  "article_title": "Domain Shift Reshapes Accuracy\u2013Efficiency Trade-offs in Progressive Visual Place Recognition",
+  "bootstrap": {
+    "confidence": 0.95,
+    "method": "paired dataset-stratified cluster resampling; Freiburg traversal substrata; equal cohort primary; query weighted sensitivity; NumPy PCG64 default_rng; linear quantile",
+    "replicates": 100000,
+    "seed": 2026111201
+  },
+  "cohort_queries": {
+    "Alderley_Day_Night": 1000,
+    "Daejeon520": 499,
+    "Freiburg_Across_Seasons": 1000
+  },
+  "development_queries": 5400,
+  "external_queries": 2499,
+  "policy_config": {
+    "calibration": "raw",
+    "comparators": {
+      "Fixed": {
+        "depths": [
+          5,
+          10,
+          20,
+          50
+        ]
+      },
+      "Full_PEAV": {
+        "decision_policy": "historical_frozen",
+        "threshold": 0.45321262287588476
+      },
+      "Progressive_Inlier": {
+        "decision_policy": "historical_frozen",
+        "threshold": 0.47164774278243266
+      }
+    },
+    "decision_depths": [
+      5,
+      10,
+      20
+    ],
+    "development_grid_row": "GPV_20879",
+    "family": "veto_5",
+    "feature_scalers": {
+      "I": {
+        "class_weight": "balanced",
+        "coef": [
+          -2.833494340784115,
+          0.589673441170037,
+          -5.173225440289573,
+          -0.25526218675585277,
+          0.2864763018173224,
+          -0.13926700003354553,
+          -0.595356866786069
+        ],
+        "depth_columns": [
+          "depth_is_10",
+          "depth_is_20"
+        ],
+        "features": [
+          "i_inliers_max",
+          "i_inliers_mean",
+          "i_inliers_top_gap",
+          "i_ratio_max",
+          "i_ratio_mean"
+        ],
+        "fit_cities": [
+          "Barcelona",
+          "Boston",
+          "Lisbon",
+          "London",
+          "LosAngeles",
+          "Madrid",
+          "Melbourne",
+          "MexicoCity",
+          "Miami",
+          "Minneapolis",
+          "OSL",
+          "PRG",
+          "Rome",
+          "TRT"
+        ],
+        "fit_rows": 25200,
+        "intercept": [
+          -4.460999574739671
+        ],
+        "scaler_mean": [
+          142.63666666666666,
+          23.071025793650794,
+          128.36281746031747,
+          0.5489925824204451,
+          0.24985907131489013
+        ],
+        "scaler_scale": [
+          182.72101330491412,
+          27.304597160016176,
+          176.79646733883143,
+          0.20235337214942764,
+          0.06671139320188008
+        ],
+        "selected_C": 0.1
+      },
+      "R": {
+        "class_weight": "balanced",
+        "coef": [
+          0.27462828588029264,
+          0.07005277994867024,
+          2.122689659892103,
+          -1.2371865058040976,
+          -6.583869801307183,
+          0.1506623276701074,
+          -0.9998160446949486,
+          -2.4772716073190844,
+          2.078410969605005,
+          -0.14458247567037488,
+          -0.1030913470441659,
+          -0.25942981039304847,
+          1.3387720875722946,
+          -0.18070884677567847,
+          -0.18015205227982134,
+          0.04499131311866513,
+          0.04499131311866513,
+          -0.04223795949483148,
+          0.01689491987456326,
+          -0.14235760282672477,
+          0.1908456688269907,
+          0.0044766712011835574,
+          -0.09569497600687327,
+          -0.11284503447401194,
+          -1.1034666038842265,
+          -0.018338270431283922,
+          -0.068337157299289,
+          -0.37635195619357814,
+          -0.17736745249502608,
+          -0.7220995107938932,
+          -1.8818303036497357
+        ],
+        "depth_columns": [
+          "depth_is_10",
+          "depth_is_20"
+        ],
+        "features": [
+          "global_query_margin",
+          "global_query_entropy",
+          "i_inliers_max",
+          "i_inliers_mean",
+          "i_inliers_top_gap",
+          "i_ratio_max",
+          "i_ratio_mean",
+          "l_putative_max",
+          "l_putative_mean",
+          "l_conf_max",
+          "l_conf_mean",
+          "l_ransac_max",
+          "l_ransac_mean",
+          "l_median_residual_mean",
+          "l_p90_residual_mean",
+          "l_degenerate_fraction",
+          "l_failure_fraction",
+          "s_query_hull_mean",
+          "s_candidate_hull_mean",
+          "s_joint_hull_max",
+          "s_joint_hull_mean",
+          "s_query_entropy_mean",
+          "s_candidate_entropy_mean",
+          "s_collinearity_mean",
+          "a_top1_agreement",
+          "a_local_top_global_rank_norm",
+          "a_kendall_tau",
+          "a_percentile_disagreement_mean",
+          "a_joint_rank_support_max"
+        ],
+        "fit_cities": [
+          "Barcelona",
+          "Boston",
+          "Lisbon",
+          "London",
+          "LosAngeles",
+          "Madrid",
+          "Melbourne",
+          "MexicoCity",
+          "Miami",
+          "Minneapolis",
+          "OSL",
+          "PRG",
+          "Rome",
+          "TRT"
+        ],
+        "fit_rows": 25200,
+        "intercept": [
+          -4.311386877354714
+        ],
+        "scaler_mean": [
+          0.39243583118747305,
+          0.12305656909816967,
+          142.63666666666666,
+          23.071025793650794,
+          128.36281746031747,
+          0.5489925824204451,
+          0.24985907131489013,
+          234.32448412698412,
+          59.56310912698412,
+          0.4572647868481184,
+          0.2629081594641838,
+          0.4516968464543895,
+          0.2148227737462443,
+          21452.783943686078,
+          21453.777249594852,
+          0.04749603174603174,
+          0.04749603174603174,
+          0.08487454666284017,
+          0.0827213808228729,
+          0.19284888615773493,
+          0.07496187937530102,
+          0.5457320789254713,
+          0.546915616826545,
+          0.8681522490545338,
+          0.6684523809523809,
+          0.16888308734799962,
+          0.18900612642717904,
+          0.451462927098892,
+          0.9854803253926061
+        ],
+        "scaler_scale": [
+          0.2255359569374959,
+          0.19110500412056372,
+          182.72101330491412,
+          27.304597160016176,
+          176.79646733883143,
+          0.20235337214942764,
+          0.06671139320188008,
+          221.64877082193968,
+          39.220774604681964,
+          0.17934184633236297,
+          0.035246485946370816,
+          0.1782679450097957,
+          0.05926230104063363,
+          76943.74935237138,
+          76943.6200368187,
+          0.09584461623087359,
+          0.09584461623087359,
+          0.03768647362281565,
+          0.030752408757731286,
+          0.08495005408698036,
+          0.02719119645827418,
+          0.1031939136654566,
+          0.098819020604537,
+          0.05505384163305728,
+          0.47076936534939695,
+          0.29574300222645594,
+          0.2916006814901471,
+          0.028870658256236855,
+          0.02690563136290057
+        ],
+        "selected_C": 1.0
+      }
+    },
+    "policy_id": "FINAL_DEV_CANDIDATE",
+    "support": "NONE",
+    "terminal_depth": 50,
+    "thresholds_R": {
+      "10": 0.6351148130386,
+      "20": 0.1347452752788,
+      "5": 0.3185578773232
+    },
+    "veto_thresholds_I": {
+      "10": 1.123431343118e-08,
+      "20": 4.38248816001e-09,
+      "5": 0.7615050856536
+    },
+    "weights": {
+      "10": 0.0,
+      "20": 0.0,
+      "5": 0.0
+    }
+  },
+  "policy_names": [
+    "Fixed_5",
+    "Fixed_10",
+    "Fixed_20",
+    "Fixed_50",
+    "Progressive_Inlier",
+    "Full_PEAV",
+    "GPV"
+  ],
+  "prespecified_decision": "NO_GO",
+  "source_fingerprints": {
+    "controller_sha256": "348c302e30e959264a36063a7cad021fb7e71428231da2422776b5256c77b175",
+    "external_protocol_sha256": "f2856b41bf3b62f2d51969c587f3ba8fb1df8cc3d16d7963c5e3547d9c86a780",
+    "historical_comparator_sha256": "b2a33a6cd0e40b6cdfe8e35ef725619c8479226add226cb7110b111e1e952530",
+    "original_external_manifest_sha256": "bfa27067bbf452ae055f33398b6d390c7b9c6c2ced001364d195ad20bc539d42"
+  }
+}

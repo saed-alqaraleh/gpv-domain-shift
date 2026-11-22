@@ -1,0 +1,13 @@
+support_method,depth,outcome,n,positives,risk_auroc
+robust_diagonal,5,gain_target,5400,254,0.7337623289704
+robust_diagonal,5,frozen_peav_premature_at_depth,5400,26,0.5941498955083
+robust_diagonal,10,gain_target,5400,173,0.7023182209758
+robust_diagonal,10,frozen_peav_premature_at_depth,5400,2,0.7741756206002
+robust_diagonal,20,gain_target,5400,104,0.6962947362305
+robust_diagonal,20,frozen_peav_premature_at_depth,5400,3,0.848310789945
+shrinkage_mahalanobis,5,gain_target,5400,254,0.5979171958344
+shrinkage_mahalanobis,5,frozen_peav_premature_at_depth,5400,26,0.5408805931694
+shrinkage_mahalanobis,10,gain_target,5400,173,0.5825764621446
+shrinkage_mahalanobis,10,frozen_peav_premature_at_depth,5400,2,0.80483512412
+shrinkage_mahalanobis,20,gain_target,5400,104,0.614705583314
+shrinkage_mahalanobis,20,frozen_peav_premature_at_depth,5400,3,0.7522080167995

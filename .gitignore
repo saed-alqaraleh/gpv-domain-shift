@@ -1,0 +1,20 @@
+# Recreated outputs, not primary evidence
+outputs/
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.DS_Store
+.ipynb_checkpoints/
+*.log
+
+# Do not track local credentials or editor state
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+.idea/
+.vscode/
